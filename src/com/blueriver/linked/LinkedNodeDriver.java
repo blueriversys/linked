@@ -1,4 +1,4 @@
-package com.blueriver.app;
+package com.blueriver.linked;
 
 public class LinkedNodeDriver {
 	private LinkedNode head;
