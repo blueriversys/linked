@@ -1,49 +1,49 @@
 package com.blueriver.linked;
 
-public class LinkedNode {
-	private String data;
-	private LinkedNode prev;
-	private LinkedNode prox;
+public class LinkedNode<T> {
+	private T data;
+	private LinkedNode<T> prev;
+	private LinkedNode<T> next;
 	
-	public LinkedNode(String data) {
+	public LinkedNode(T data) {
 		this.data = data;
 	}
 	
 	/**
 	 * @return the data
 	 */
-	public String getData() {
+	public T getData() {
 		return data;
 	}
 	/**
 	 * @return the prev
 	 */
-	public LinkedNode getPrev() {
+	public LinkedNode<T> getPrev() {
 		return prev;
 	}
 	/**
 	 * @return the prox
 	 */
-	public LinkedNode getProx() {
-		return prox;
+	public LinkedNode<T> getNext() {
+		return next;
 	}
 	/**
 	 * @param data the data to set
 	 */
-	public void setData(String data) {
+	public void setData(T data) {
 		this.data = data;
 	}
 	/**
 	 * @param prev the prev to set
 	 */
-	public void setPrev(LinkedNode prev) {
+	public void setPrev(LinkedNode<T> prev) {
 		this.prev = prev;
 	}
 	/**
 	 * @param prox the prox to set
 	 */
-	public void setProx(LinkedNode prox) {
-		this.prox = prox;
+	public void setNext(LinkedNode<T> next) {
+		this.next = next;
 	}
 }
 
