@@ -1,5 +1,11 @@
 package com.blueriver.linked;
 
+/**
+ * 
+ * @author Joe
+ *
+ * @param <T> The type this LinkNode will hold
+ */
 public class LinkedNode<T> {
 	private T data;
 	private LinkedNode<T> prev;
